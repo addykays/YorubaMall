@@ -8,7 +8,8 @@
 <meta name="keywords" content="Yoruba, Yorubamall, mall">
 <meta name="author" content="Kareem Adekunle (addykays)">
 <link rel="author" href="https://plus.google.com/+addykays">
-<link rel="shortcut icon" type="image/jpg" href="images/fav.jpg">
+<link rel="shortcut icon" type="image/ico" href="images/favico.ico">
+<link rel="icon" type="image/ico" href="images/favico.ico">
 <link rel="canonical" href="www.yorubamall.com">
 <!-- CSS links -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,8 +31,9 @@
 		margin-right: 10px;
 	}
 
-	.navbar-brand {
-		
+	.nopad {
+		padding-left: 0px;
+		padding-right: 0px;
 }
 </style>
 <!-- BODY -->
@@ -40,9 +42,7 @@
 	<header>
 <div id="top"><img src="images/yorubamall_webhead.jpg" style="width:100%" class="img-responsive"></div>
 <div id="stickyheader">
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #6b0404;">
-
-	<div class="navbar-header">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #6b0404;">
 
   <div class="navbar-brand">
 
@@ -58,8 +58,6 @@
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  </div>  <!-- End navbar-header -->
 
   <div class="collapse navbar-collapse" id="topNav">
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -107,7 +105,7 @@
 <div class="row">
 
   <div class="col-md-3"> <!-- SideBar -->
-     <div class="col-md-12">
+     <div class="col-md-12 nopad rounded-bottom" style="background-color: white;"> <!-- Inner SideBar -->
         <div class="list-group list-group-flush"> <!-- list-group -->
   <a class="list-group-item list-group-item-action" href="#sub" data-toggle="collapse" data-parent="#sub">
           <span>US Lawyers Creed</span>
@@ -164,6 +162,7 @@
           <a href="#" class="list-group-item sub-item" data-parent="#sub" style="padding-left: 40px;">Washington</a>
           <a href="#" class="list-group-item sub-item" data-parent="#sub" style="padding-left: 40px;">West Virginia</a>
           <a href="#" class="list-group-item sub-item" data-parent="#sub" style="padding-left: 40px;">Wisconsin</a>
+          <a href="#" class="list-group-item sub-item" data-parent="#sub" style="padding-left: 40px;">Wyoming</a>
       </div>
   <a href="#" class="list-group-item list-group-item-action">Oyotunji Village Franchise</a>
   <a href="#" class="list-group-item list-group-item-action">Health &amp; Beauty</a>
@@ -174,6 +173,18 @@
 </div> <!-- End list-group -->
 
 <img src="images/satisfaction_guaranteed.jpg" class="img-fluid">
+
+<div class="followUs">
+	<p class="ml-3 mr-3 text-center mt-2 mb-2">Get connected with us on social networks!</p>
+	<img src="images/facebook_logo.png" alt="facebook_logo" class="img-responsive rounded-circle socialspin mt-4 mx-auto" title="FaceBook">
+	<img src="images/twitter_logo.png" alt="twitter_Logo" class="img-responsive rounded-circle socialspin mt-4 mx-auto" title="Twitter">
+	<img src="images/youtube_logo.png" alt="youtube_logo" class="img-responsive rounded-circle socialspin mt-4 mx-auto" title="Youtube">
+    <img src="images/linkedin_logo.jpg" alt="linkedin_logo" class="img-responsive rounded-circle socialspin mt-4 mb-5 mx-auto" title="Linkedin">
+</div>
+     
+
+
+
      </div> <!-- End SideBar inner -->
   </div> <!-- End SideBar -->
 
@@ -424,42 +435,18 @@ span.onclick = function() {
 <footer class="" style="background-color: #0f0000;" >
 
     <div style="background-color: #6b0404;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-5 text-center text-md-left">
-                    <h6 class="text-white">Get connected with us on social networks!</h6>
-                </div>
-                <div class="col-md-6 col-lg-7 text-center text-md-right">
-                    <!--Facebook-->
-                    <a href="">
-                    <!-- 	<i class="fab fa-facebook img-responsive img-circle socialspin mr-lg-4"></i> -->
-                    <img src="images/facebook_logo.png" class="img-responsive rounded-circle socialspin mr-lg-4" >
-                    </a>
-                    <!--Twitter-->
-                    <a href="">
-                     <!-- <i class="fab fa-twitter white-text mr-lg-4"> </i>  -->
-                     <img src="images/twitter_logo.png" class="img-responsive rounded-circle socialspin mr-lg-4" >
-                 </a>
-                    <!--Google +-->
-                    <a href=""> 
-                    <!-- 	<i class="fab fa-google-plus white-text mr-lg-4"> </i>  -->
-                    <img src="images/youtube_logo.png" class="img-responsive rounded-circle socialspin mr-lg-4" >
-                    </a>
-                    <!--Linkedin-->
-                    <a href="">
-                    <!--  <i class="fab fa-linkedin white-text mr-lg-4"> </i>  -->
-                    <img src="images/linkedin_logo.jpg" class="img-responsive rounded-circle socialspin mr-lg-4" >
-                    </a>
-                    <!--Instagram-->
-                    <a href="">
-                     <!-- <i class="fab fa-instagram white-text mr-lg-4"> </i>  -->
-                 </a>
+        
+            <div class="row text-white">
+                <div class="col-md-12">
+                	<marquee direction="right" behavior="alternate">
+    <span class="text-capitalize" style="font-family: AntiqueOliNorDReg, AntiqueOliNorOutPReg;">Aim for Our Deals – All New and Exciting Products | Buy Quality and Don’t Miss Our Everyday Deals | Check Out our Available Deals Today</span>
+</marquee>
                 </div>
                 <!--Grid column-->
 
             </div>
             <!--Grid row-->
-        </div>
+        
     </div>
 <div><img src="images/Yorubamall_logo.png" style="width: 60%; display: block; margin: auto;"></div>
     <!--Footer Links-->

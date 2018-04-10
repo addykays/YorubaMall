@@ -316,6 +316,13 @@ ___----------------------------____
 */
 
 
+.followUs img {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
 .socialspin {
   animation: spin 30s 1s linear infinite;
   width: 30px;
@@ -345,3 +352,20 @@ ___----------------------------____
 }
 
 /*End Content*/
+
+
+@font-face {
+font-family: "AntiqueOliNorDReg";
+src: 
+local('AntiqueOliNorDReg'),
+  url('font/AntiqueOliNorDReg.ttf'),
+  format('truetype');
+}
+
+@font-face {
+font-family: "AntiqueOliNorOutPReg";
+src: 
+local('AntiqueOliNorOutPReg'),
+  url('font/AntiqueOliNorOutPReg.ttf'),
+  format('truetype');
+}
