@@ -173,14 +173,13 @@
   <a href="#" class="list-group-item list-group-item-action">Jewelry</a>
 </div> <!-- End list-group -->
 
-<img src="images/satisfaction_guaranteed.jpg" class="img-fluid img-thumbnail">
+<img src="images/satisfaction_guaranteed.jpg" class="img-fluid">
      </div> <!-- End SideBar inner -->
   </div> <!-- End SideBar -->
 
   <div class="col-md-9"> <!-- Main Content -->
      <div class="col-md-12">
-        <div class="wine-trans">
-	<div class="" id="">
+        <div class="wine-trans"> <!-- Main container -->
 	<!-- Flash Image -->
 <div class="Mslideshow-container">
 
@@ -219,14 +218,12 @@ function showSlides() {
 }
 	</script>
 
-</div>
+</div> <!-- End Mslideshow-container -->
 
 	<!-- End Flash Image -->
 
-</div>
 
-
-<div class="product">
+<div class="product"> <!-- Product -->
 <div class="product_cont">
 	<img onclick="imgOn(prodimg3)" id="prodimg3" src="images/front/Alabama_Lawyers_CreedBLK5_Prints.jpg" alt="Alabama State Lawyer’s Creed BLK5 Prints">
 	<div class="overlay">
@@ -354,14 +351,68 @@ function showSlides() {
 </div>
 </div>
 
+</div> <!-- End Product -->
+
+<!-- The Product Modal -->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div id="myModal" class="modal">
+	
+  <span class="close">&times;</span>
+  <input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="2XETDFHMVLDQL">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  <div id="getProd"><a href="" style="font-size: 24px;">BUY NOW</a></div>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  <!-- <div id="description"></div> -->
+  
 </div>
+</form>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+//var productDescripton = document.getElementById("description");
+//var prodDesc = document.getElementById("descr");
+function imgOn(imgID){
+	//var descr = document.getElementById('descr');
+	//for (i=0, i<=descr.length, i++);
+    modal.style.display = "block";
+    modalImg.src = imgID.src;
+    captionText.innerHTML = imgID.alt;
+//	productDescripton.innerHTML = document.getElementsByClassName('descr').innerHTML;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+<!--END OF THE PRODUCT MODAL AND SCRIPT-->
 
 
 
-</div> <!-- Container -->
-     </div>
-  </div>
-</div>
+
+
+
+
+
+</div> <!-- End Main Container -->
+
+     </div> <!-- End Main Inner -->
+
+  </div> <!-- End Main -->
+
+</div> <!-- End Row -->
 
 
 </div> <!-- Container Fluid -->
